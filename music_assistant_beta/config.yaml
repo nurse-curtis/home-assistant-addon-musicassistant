@@ -24,6 +24,10 @@ advanced: false
 stage: stable
 image: ghcr.io/music-assistant/server
 tmpfs: true
+ports:
+  8095/tcp: 8095
+ports_description:
+  8095/tcp: Musicassistant server port (make empty to disable)
 options:
   log_level: info
   enable_uvloop: false
